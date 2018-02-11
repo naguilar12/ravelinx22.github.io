@@ -12,7 +12,7 @@ body {
 
 .vertical_hr {
   background-color: #1a2648;
-  margin: 15px 10px;
+  margin: 12px 10px;
   width: 1px;
 }
 
@@ -42,7 +42,8 @@ nav {
   border: 1px solid #384C7F;
   border-radius: 4px;
   display: block;
-  height: 30px;
+  font-size: 15px;
+  height: 24px;
   margin: 0 auto;
   padding: 2px 0 2px 8px;
   width: 440px;
@@ -54,7 +55,7 @@ nav {
   height: 14px;
   position: absolute;
   right: 12px;
-  top: 16px;
+  top: 13px;
   width: 14px;
 }
 
@@ -102,4 +103,12 @@ nav {
 .arrow_icon {
   height: 20px;
   width: 20px;
+}
+
+.navbar_row {
+  width: 100%;
+}
+
+.home_option {
+  margin-right: 30px;
 }
