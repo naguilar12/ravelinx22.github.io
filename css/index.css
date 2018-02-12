@@ -19,6 +19,10 @@ a:hover {
   text-decoration: none;
 }
 
+.content {
+  margin-top: 15px;
+}
+
 /* Helpers */
 
 .light {
@@ -33,6 +37,7 @@ a:hover {
 
 .general_container {
   margin-top: 40px;
+  width: 849px;
 }
 
 /* Navigation bar */
@@ -158,13 +163,11 @@ content: url('../img/network_icon.svg');
   background-color: black;
   height: 313px;
   position: relative;
-  width: 849px;
 }
 
 .timeline_navigation {
   background-color: white;
   height: 43px;
-  width: 849px;
 }
 
 .profile_picture {
