@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/index.css">
 
   <!-- Font Dependencies -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 </head>
 
 <body>
@@ -24,30 +24,48 @@
           <i class="fas fa-search search-btn"></i>
         </div>
 
-        <a class="navbar_profile ml-auto profile_option" href="#">
+        <a class="navbar_profile ml-auto profile_option d-none d-lg-block d-xl-none d-xl-block d-md-block" href="#">
           <img class="img rounded-circle navbar_profile_picture" src="img/nav-facebook.png" alt="">
           <span class="light">William</span>
         </a>
-        <div class="vertical_hr"></div>
-        <a class="navbar_profile home_option" href="#">
+        <div class="vertical_hr d-none d-lg-block d-xl-none d-xl-block d-md-block"></div>
+        <a class="navbar_profile home_option d-none d-lg-block d-xl-none d-xl-block d-md-block" href="#">
           <span class="light">Inicio</span>
         </a>
 
-        <div class="navbar_options">
-          <a href="#"><img src="img/network_icon.svg" class="navbar_icon network_icon"/></a>
-          <a href="#"><img src="img/earth_icon.svg" class="navbar_icon earth_icon"/></a>
+        <div class="navbar_options d-none d-lg-block d-xl-none d-xl-block">
+          <a href="#"><img class="navbar_icon network_icon" alt=""/></a>
           <a href="#"><i class="fab fa-facebook-messenger navbar_icon messenger_icon"></i></a>
+          <a href="#"><img class="navbar_icon earth_icon" alt=""/></a>
         </div>
-        <div class="vertical_hr"></div>
-        <div class="navbar_options">
+        <div class="vertical_hr d-none d-lg-block d-xl-none d-xl-block"></div>
+        <div class="navbar_options d-none d-lg-block d-xl-none d-xl-block">
           <a href="#"><i class="fas fa-question-circle navbar_icon question_icon"></i></a>
           <a href="#"><i class="fas fa-caret-down navbar_icon question_icon"></i></a>
         </div>
       </div>
     </div>
   </nav>
-
   <!-- End Navigation -->
+
+  <div class="container general_container">
+    <div class="timeline_heading">
+      <div class="row timeline_photo">
+        <div class="profile_picture"></div>
+        <div class="profile_name">William Ravelo Mendez</div>
+        <button class="header_add_friend"><i class="fas fa-user-plus header_add_friend_icon"></i>Add as friend</button>
+        <button class="header_message"><i class="fab fa-facebook-messenger header_message_icon"></i>Message</button>
+      </div>
+      <div class="row timeline_navigation">
+        <a class="p-2 header_starting_option header_option header_option_active" href="#">Home</a>
+        <a class="p-2 header_option" href="#">Education</a>
+        <a class="p-2 header_option" href="#">Experience</a>
+        <a class="p-2 header_option" href="#">Skills</a>
+        <a class="p-2 header_option" href="#">Projects</a>
+        <a class="p-2 header_option" href="#">Contact</a>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Javascript Dependencies -->
