@@ -1031,3 +1031,39 @@
   height: 3px;
   background-position: -81px -84px
 }
+
+.UFICommentEmojiIcon {
+    background-image: url('../img/3YzX6lgvOve.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -17px -223px;
+    height: 16px;
+    width: 16px;
+}
+
+.UFICommentPhotoIcon {
+    background-image: url('../img/3YzX6lgvOve.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -206px;
+    height: 16px;
+    width: 16px;
+}
+
+.UFICommentGifIcon {
+    background-image: url('../img/3YzX6lgvOve.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -240px;
+    height: 16px;
+    width: 16px;
+}
+
+.UFICommentStickerIcon {
+    background-image: url('../img/3YzX6lgvOve.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -34px -257px;
+    height: 16px;
+    width: 16px;
+}
