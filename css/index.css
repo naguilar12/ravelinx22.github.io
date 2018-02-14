@@ -53,6 +53,7 @@ nav {
 }
 
 .navbar_logo {
+  background: url("../img/nav-facebook.png");
   height: 24px;
   margin: auto 0;
   width: 24px;
