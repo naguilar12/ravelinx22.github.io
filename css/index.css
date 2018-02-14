@@ -4,6 +4,7 @@ body {
   background-color: #e9ebee;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  position: relative;
 }
 
 button {
@@ -125,7 +126,7 @@ nav {
 }
 
 .network_icon {
-content: url('../img/network_icon.svg');
+  content: url('../img/network_icon.svg');
   height: 23px;
   width: 23px;
 }
@@ -144,7 +145,7 @@ content: url('../img/network_icon.svg');
   content: url('../img/earth_icon_hover.svg');
 }
 
-.messenger_icon{
+.messenger_icon {
   height: 20px;
   width: 20px;
 }
@@ -269,4 +270,92 @@ content: url('../img/network_icon.svg');
 .header_option_active:hover {
   background-color: white;
   color: #4a4e56;
+}
+
+/* Chat */
+
+.chat_container {
+  background-color: white;
+  border: 1px solid lightgrey;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  right: 20px;
+  width: 256px;
+}
+
+.chat_head {
+  background-color: #f6f7f9;
+  border-bottom: 1px solid lightgrey;
+  font-size: 12px;
+  font-weight: 500;
+  height: 26px;
+  line-height: 26px;
+  position: relative;
+  text-align: center;
+}
+
+.chat_head_message {
+  color: black;
+}
+
+.chat_head_message:hover {
+  color: black;
+}
+
+.from_row {
+  border-bottom: 1px solid lightgrey;
+  height: 26px;
+  padding-left: 45px;
+  position: relative;
+  width: 100%;
+}
+
+.input_from {
+  border: 0;
+  font-size: 12px;
+  font-weight: 100;
+  height: 20px;
+  width: 100%;
+}
+
+.from_title {
+  font-size: 12px;
+  font-weight: 100;
+  left: 10px;
+  line-height: 26px;
+  position: absolute;
+}
+
+.chat_content {
+  background-color: white;
+  height: 210px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.chat_input_container {
+  border-top: 1px solid lightgrey;
+  height: 26px;
+  width: 100%;
+}
+
+.chat_input {
+  border: 0;
+  font-size: 12px;
+  font-weight: 100;
+  height: 20px;
+  width: 100%;
+}
+
+.close_chat {
+  background-image: url('../img/6y2D6l48hb7.png');
+  background-position: -1px -294px;
+  background-repeat: no-repeat;
+  background-size: 33px 861px;
+  height: 26px;
+  position: absolute;
+  right: 10px;
+  width: 22px;
 }
