@@ -160,29 +160,40 @@ content: url('../img/network_icon.svg');
 /* Timeline Heading */
 
 .timeline_photo {
-  background-color: black;
+  background: url('../img/banner.png');
   height: 313px;
   position: relative;
 }
 
 .timeline_navigation {
   background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 0 0 3px 3px;
   height: 43px;
 }
 
-.profile_picture {
-  background-color: red;
+.profile_picture_container {
+  border: 1px solid grey;
+  box-sizing: border-box;
   height: 160px;
   left: 25px;
+  overflow: hidden;
   position: absolute;
   top: 180px;
   width: 160px;
+}
+
+.profile_picture {
+  border: 5px solid white;
+  height: 100%;
+  width: 100%;
 }
 
 .profile_name {
   bottom: 15px;
   color: white;
   font-size: 20px;
+  font-weight: 100;
   left: 200px;
   position: absolute;
 }
@@ -229,6 +240,11 @@ content: url('../img/network_icon.svg');
   color: #3b5998;
   font-size: 14px;
   line-height: 27px;
+}
+
+.p-2 {
+  padding-left: 17px !important;
+  padding-right: 17px !important;
 }
 
 .header_option:hover {
