@@ -12,6 +12,9 @@ $(document).ready(function() {
     } else {
       $('.chat_container').show();
     }
+
+    $('.chat_head').css("background-color","#4570ff");
+    $('#resume_chat_link').css("color", "white");
   }
 
   function appendBubble(text) {
@@ -36,6 +39,8 @@ $(document).ready(function() {
       $('.chat_content').hide();
       $('.chat_input_container').hide();
       $('.close_chat').hide();
+      $('.chat_head').css("background-color","#f6f7f9");
+      $('#resume_chat_link').css("color", "#4a4e56");
     } else {
       openChat();
     }
@@ -43,6 +48,8 @@ $(document).ready(function() {
 
   $('.close_chat').click(function() {
     $('.chat_container').hide();
+    $('.chat_head').css("background-color","#f6f7f9");
+    $('#resume_chat_link').css("color", "#4a4e56");
   });
 
   $('#btn_message').click(function() {
