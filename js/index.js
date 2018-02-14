@@ -14,6 +14,20 @@ $(document).ready(function() {
     }
   }
 
+  function appendBubble(text) {
+    var bubble = $('<div>')
+      .text(text)
+      .addClass('float-right')
+      .addClass('chat_bubble');
+
+    $('#chat_text').append(bubble);
+  }
+
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
   $('#resume_chat_link').click(function() {
     if ($('.chat_content').is(":visible")) {
       $('.chat_container').width(149);
@@ -23,32 +37,46 @@ $(document).ready(function() {
       $('.chat_input_container').hide();
       $('.close_chat').hide();
     } else {
-      openChat()
+      openChat();
     }
-  })
+  });
 
   $('.close_chat').click(function() {
     $('.chat_container').hide();
-  })
+  });
 
   $('#btn_message').click(function() {
     openChat()
-  })
+  });
 
   $('#chat_input_message').keypress(function(e) {
     if (e.which == 13) {
-      var name = 'William';
-      var email = 'drummerwilliam@gmail.com';
-      var message = 'posi';
+      var input_email = $('#chat_input_from').val();
+      var input_message = $('#chat_input_message').val();
+      var payload = {
+        email: input_email,
+        message: input_message
+      };
+      var href = "https://formcarry.com/s/HJydhmzDf";
 
-      $.ajax({
-        url: '//formspree.io/drummerwilliam@gmail.com',
-        method: "POST",
-        data: {
-          message: "hello!"
-        },
-        dataType: "json"
-      });
+      if (!isEmail(input_email)) {
+        appendBubble('Enter valid email');
+      } else {
+        $.ajax({
+          type: "POST",
+          dataType: "json",
+          url: href,
+          data: payload,
+          success: function(response) {
+            if (response.status == "success") {
+              $('#chat_input_message').val('');
+              appendBubble('Message Send');
+            } else {
+              appendBubble('There was an error sending the message');
+            }
+          }
+        });
+      }
     }
   });
 });

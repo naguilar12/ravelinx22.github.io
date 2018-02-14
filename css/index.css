@@ -366,3 +366,16 @@ nav {
   right: 10px;
   width: 22px;
 }
+
+.chat_bubble {
+  background-color: #4570ff;
+  border-radius: 20px 0 20px 20px;
+  clear: both;
+  color: white;
+  display: block;
+  font-size: 12px;
+  font-weight: 100;
+  margin-top: 2px;
+  padding: 5px 10px;
+  text-align: center;
+}
