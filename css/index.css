@@ -86,6 +86,10 @@ nav {
 
 .navbar_profile_picture {
   height: 20px;
+  object-fit: cover;
+  position: absolute;
+  right: 40px;
+  top: 4px;
   width: 20px;
 }
 
@@ -93,6 +97,12 @@ nav {
   font-size: 13px;
   margin: auto 0;
   padding: 5px;
+  position: relative;
+}
+
+.user_navbar_profile {
+  text-align: right;
+  width: 65px;
 }
 
 .navbar_profile:hover {

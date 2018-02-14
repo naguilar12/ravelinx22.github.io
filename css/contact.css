@@ -161,6 +161,7 @@
 
 .commenter_profile_pic {
   height: 32px;
+  object-fit: cover;
   width: 32px;
 }
 
@@ -220,10 +221,11 @@
 }
 
 .contact_photo {
-  background-color: black;
+  background-color: white;
   border-right: 1px solid lightgrey;
   box-sizing: border-box;
   height: 158px;
+  object-fit: cover;
   width: 158px;
 }
 

@@ -160,13 +160,14 @@
 
 .commenter_profile_pic {
   height: 32px;
+  object-fit: cover;
   width: 32px;
 }
 
 .comment_input_container {
   margin-left: 5px;
-  width: calc(100% - 10px - 32px);
   position: relative;
+  width: calc(100% - 10px - 32px);
 }
 
 .comment_input {
