@@ -517,18 +517,18 @@
 }
 
 .sp_YwbtdvAuRMG.sx_1fe03f {
-    width: 24px;
-    height: 24px;
-    background-position: 0 -51px;
+  width: 24px;
+  height: 24px;
+  background-position: 0 -51px;
 }
 
 .sp_YwbtdvAuRMG {
-    background-image: url('../img/IABeU08zb-C.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 50px;
-    width: 16px;
+  background-image: url('../img/IABeU08zb-C.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 50px;
+  width: 16px;
 }
 
 .sp_SeXnLWDyDgU_2x {
@@ -1048,37 +1048,55 @@
 }
 
 .UFICommentEmojiIcon {
-    background-image: url('../img/3YzX6lgvOve.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: -17px -223px;
-    height: 16px;
-    width: 16px;
+  background-image: url('../img/3YzX6lgvOve.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -223px;
+  height: 16px;
+  width: 16px;
 }
 
 .UFICommentPhotoIcon {
-    background-image: url('../img/3YzX6lgvOve.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 0 -206px;
-    height: 16px;
-    width: 16px;
+  background-image: url('../img/3YzX6lgvOve.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -206px;
+  height: 16px;
+  width: 16px;
 }
 
 .UFICommentGifIcon {
-    background-image: url('../img/3YzX6lgvOve.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 0 -240px;
-    height: 16px;
-    width: 16px;
+  background-image: url('../img/3YzX6lgvOve.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -240px;
+  height: 16px;
+  width: 16px;
 }
 
 .UFICommentStickerIcon {
-    background-image: url('../img/3YzX6lgvOve.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: -34px -257px;
-    height: 16px;
-    width: 16px;
+  background-image: url('../img/3YzX6lgvOve.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -34px -257px;
+  height: 16px;
+  width: 16px;
+}
+
+.liked_icon {
+  background-image: url('../img/BnQHXcSOl_o.png');
+  background-position: -85px -144px;
+  background-repeat: no-repeat;
+  background-size: 171px 202px;
+  height: 16px;
+  width: 16px;
+}
+
+.loved_icon {
+  background-image: url('../img/BnQHXcSOl_o.png');
+  background-position: -34px -144px;
+  background-repeat: no-repeat;
+  background-size: 171px 202px;
+  height: 16px;
+  width: 16px;
 }

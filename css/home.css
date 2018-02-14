@@ -182,11 +182,31 @@
   width: 100%;
 }
 
+.likes_state_container {
+  background-color: #f2f3f5;
+  display: none;
+  width: 100%;
+}
+
 .comment_option {
   border-bottom: 1px solid lightgrey;
   border-left: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
   padding: 10px;
+}
+
+.likes_history {
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 9px 12px;
+}
+
+.liker_name {
+  color: #365899;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 5px;
 }
 
 .commenter_profile_pic {
