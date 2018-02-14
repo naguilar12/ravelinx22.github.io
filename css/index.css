@@ -281,8 +281,8 @@ nav {
   overflow-x: hidden;
   overflow-y: scroll;
   position: fixed;
-  right: 20px;
-  width: 256px;
+  right: 120px;
+  width: 149px;
 }
 
 .chat_head {
@@ -297,15 +297,19 @@ nav {
 }
 
 .chat_head_message {
-  color: black;
+  border: none;
+  background: none;
+  color: #4a4e56;
+  outline: 0 !important;
 }
 
 .chat_head_message:hover {
-  color: black;
+  color: #4a4e56;
 }
 
 .from_row {
   border-bottom: 1px solid lightgrey;
+  display: none;
   height: 26px;
   padding-left: 45px;
   position: relative;
@@ -330,6 +334,7 @@ nav {
 
 .chat_content {
   background-color: white;
+  display: none;
   height: 210px;
   overflow: scroll;
   width: 100%;
@@ -337,6 +342,7 @@ nav {
 
 .chat_input_container {
   border-top: 1px solid lightgrey;
+  display: none;
   height: 26px;
   width: 100%;
 }
@@ -354,6 +360,7 @@ nav {
   background-position: -1px -294px;
   background-repeat: no-repeat;
   background-size: 33px 861px;
+  display: none;
   height: 26px;
   position: absolute;
   right: 10px;
