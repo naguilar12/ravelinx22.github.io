@@ -2,6 +2,7 @@
 $(document).ready(function() {
 	"use strict";
 
+	// Helpers
 	function openChat() {
 		if ($(".chat_container").is(":visible")) {
 			$(".chat_container").width(254);
@@ -18,6 +19,7 @@ $(document).ready(function() {
 		$("#resume_chat_link").css("color", "white");
 	}
 
+	// Adds a bubble to the chat
 	function appendBubble(text) {
 		var bubble = $("<div>")
 			.text(text)
@@ -27,12 +29,15 @@ $(document).ready(function() {
 		$("#chat_text").append(bubble);
 	}
 
+	// Verifies if an email is valid
 	function isEmail(email) {
 		var regex = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		return regex.test(email);
 	}
 
+	// Listeners
 	$("#resume_chat_link").click(function() {
+		// Chat it's already open
 		if ($(".chat_content").is(":visible")) {
 			$(".chat_container").width(149);
 			$(".chat_container").css("right", 120);
@@ -43,6 +48,7 @@ $(document).ready(function() {
 			$(".chat_head").css("background-color", "#f6f7f9");
 			$("#resume_chat_link").css("color", "#4a4e56");
 		} else {
+			// Chat it's closed
 			openChat();
 		}
 	});
@@ -57,6 +63,12 @@ $(document).ready(function() {
 		openChat();
 	});
 
+	// Open chat if clicks in navbar
+	$(".message_navbar_option").click(function() {
+		openChat();
+	});
+
+	// Send email if mail is valid and message is not empty
 	$("#chat_input_message").keypress(function(e) {
 		if (e.which == 13) {
 			var input_email = $("#chat_input_from").val();
@@ -69,6 +81,8 @@ $(document).ready(function() {
 
 			if (!isEmail(input_email)) {
 				appendBubble("Enter valid email");
+			} else if(input_message == "") {
+				appendBubble("Message can't be empty");
 			} else {
 				$.ajax({
 					type: "POST",
